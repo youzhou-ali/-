@@ -1,17 +1,17 @@
-package sort;
+package algorithmSort;
 
 import collection.Node;
 
 import java.util.List;
 
-public class TreeSort implements sort{
+public class TreeSort implements Sort {
 
     private int[] numbers;
     private Node n;
 
-    public TreeSort(int[] numbers, Node n) {
+    public TreeSort(int[] numbers) {
         this.numbers = numbers;
-        this.n = n;
+        this.n = new Node();
     }
 
     //创建二叉树

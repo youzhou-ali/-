@@ -1,6 +1,6 @@
-package sort;
+package algorithmSort;
 
-public class BubblingSort implements sort {
+public class BubblingSort implements Sort {
     private int[] numbers;
 
     public BubblingSort(int[] numbers) {
@@ -11,7 +11,7 @@ public class BubblingSort implements sort {
     @Override
     public void sort() {
         for (int j = 0; j < numbers.length; j++) {
-            for (int i = 0; i < numbers.length - j - 1; j++) {
+            for (int i = 0; i < numbers.length - j - 1; i++) {
                 if (numbers[i] > numbers[i + 1]) {
                     int temp = numbers[i];
                     numbers[i] = numbers[i + 1];

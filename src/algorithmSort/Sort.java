@@ -1,6 +1,6 @@
-package sort;
+package algorithmSort;
 
-public interface sort {
+public interface Sort {
     void sort();
 
     int[] values();
